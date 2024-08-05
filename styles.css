@@ -1,61 +1,56 @@
 * {
-	border: 1px dashed red;
-	min-height: 10px;
+	box-sizing: border-box;
+	position: relative;
 }
 
 body {
 	background: black;
-}
-
-p {
-	color: blue;
-	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 input {
-	border: none;
-	border-bottom: grey;
+	width: 100%;
+	padding: 5px;
+	margin: 3px 0;
+	border: 0;
+	border-bottom: 1px solid #bdbdbd;
 }
 
 button {
-	background-color: grey;
-	padding: 30px;
+	padding: 10px 20px;
+	font-size: 14px;
 }
 
 .postcard {
+	width: 600px;
+	margin: 100px auto;
 	background: white;
-	width: 400px;
-	height: 300px;
-	margin: auto;
 }
 
 .postcard-header {
 	display: flex;
+	padding: 10px;
 }
 
 .postcard-header img {
-	width: 15px;
-	height: 15px;
+	height: 70px;
 }
 
 .postcard-header h1 {
-	width: 100px;
-	margin: 0;
+	width: 100%;
 }
 
 .postcard-body {
 	display: flex;
 }
 
+.postcard-body .body-left,
+.postcard-body .body-right {
+	width: 50%;
+	padding: 0 10px;
+}
+
 .postcard-footer {
 	text-align: center;
-}
-
-.body-left p:first-child {
-	margin-top: 0;
-}
-
-.body-left,
-.body-right {
 	padding: 10px;
 }
